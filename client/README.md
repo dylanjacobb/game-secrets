@@ -7,7 +7,6 @@ A web application that allows users to share game secrets amongst each other
 * [User Story](#user-story)
 * [Description](#description)
 * [Process](#process)
-* [Screenshots](#screenshots)
 * [Sources](#sources)
 * [Technologies](#Technologies)
 * [Installation](#installation)
@@ -16,7 +15,7 @@ A web application that allows users to share game secrets amongst each other
 
 ## Deployed Site
 ---
-Deployed Website: 
+Deployed Website: http://game-secrets.herokuapp.com/
 
 ## User Story
 ---
@@ -38,13 +37,8 @@ We used Mongo DB to setup the server for our app, Express.js as the middleware a
 
 ## Screenshots
 ---
-Home Page
+![Responsive](/assets/images/comments-game.png)
 
-![Home Screenshot]()
-
-Profile Page
-
-![Home Screenshot]()
 
 ## Sources
 ---
@@ -65,7 +59,7 @@ Profile Page
 ---
 Cloudinary
 
-See deployed site here: 
+See deployed site here: http://game-secrets.herokuapp.com/
 
 See repository here: https://github.com/dylanjacobb/game-secrets
 
