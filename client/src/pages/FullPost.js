@@ -28,10 +28,10 @@ const FullPost = props => {
 
   return (
     <>
-      <div key={post._id} className="card commented-main-card">
+      <div key={post._id} className="commented-main-card">
         <div className="card-horizontal">
           <div className="img-square-wrapper">
-          <Image cloudName="dlq3ftm0n" publicId={post.image}/>
+          <Image className="comment-post-image" cloudName="dlq3ftm0n" publicId={post.image}/>
           </div>
           <div className="card-body">
             <h4 className="card-title">{post.title}</h4>
@@ -39,12 +39,13 @@ const FullPost = props => {
             <p className="card-text">
               {post.body}
             </p>
+          </div>
+        </div>
             <div className="card-footer">
               <small className="text-muted">{post.date}</small>
             </div>
-          </div>
-        </div>
       </div>
+      <div className="comments-main" >
       <label htmlFor="exampleFormControlTextarea1">Post a comment below:</label>
       <form onSubmit={commentHandler}>
         <textarea
@@ -53,16 +54,17 @@ const FullPost = props => {
           rows="3"
           placeholder="Pour your heart out!"
           ref={commentRef}
-        ></textarea>
-        <button type="submit" className="btn btn-primary">
+          ></textarea>
+        <button type="submit" className="btn btn-danger">
           Submit
           </button>
       </form>
       {post.comments && post.comments.map((commentz,i) => (
-      <div key={commentz._id} className="card">
+        <div key={commentz._id} className="comment-card">
         {commentz.content}
       </div>
      ))}
+     </div>
     </>
   );
 };

@@ -1,5 +1,49 @@
-.commented-main-card {
+@media only screen and (max-width: 600px) {
+    .commented-main-card {
+        min-width: 90%;
+    }
+    .comment-post-image {
+        display: none;
+    }
+  }
+
+  .commented-main-card{
+    box-shadow: 0 0 20px rgb(213, 213, 213);
+    transition: .6s;
+    width: 60%;
+    padding: 0;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: white;
     margin-top: 100px;
+}
+
+.comments-main {
+    transition: .6s;
+    width: 60%;
+    padding: 0;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: white;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.comment-card {
+    margin-top: 10px;
+}
+
+.commented-main-card:hover {
+    transform: scale(1.001, 1.01);
+}
+
+
+c {
+    margin-top: 100px;
+    
 }
 
 .view-comments-btn {
